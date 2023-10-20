@@ -1,0 +1,75 @@
+@import 'variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: $GrayscaleBlack;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $Grayscale50;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+h4 {
+  color: $GrayscaleBlack;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.description {
+  color: $Grayscale10;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.main {
+  &__image {
+    margin-bottom: 100px;
+
+    img {
+      width: 98vw;
+      height: 430px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: auto;
+    margin: 0 15px;
+  }
+}

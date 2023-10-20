@@ -1,0 +1,50 @@
+@import '../variables';
+
+.pdf {
+    margin-top: 100px;
+
+    &__suptitle {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 530px;
+            height: 2px;
+            background: $GrayscaleBlack;
+            top: 10px;
+            left: 110px;
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 600px;
+    }
+
+    &__description {
+        &__text1 {
+            margin-right: 566px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__image {
+        display: block;
+        position: relative;
+        bottom: 180px;
+        left: 650px;
+    }
+
+    &__link {
+        &_button {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
+            color: #fff;
+            padding: 14px 32px;
+            background: $PrimaryBlue100;
+        }
+    }
+}
