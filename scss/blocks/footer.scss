@@ -1,75 +1,100 @@
-@import '../variables';
+@import "../variables";
 
 footer {
-    background-color: $PrimaryBlue100;
-    color: $GrayscaleWhite;
-    height: 480px;
+  background-color: $PrimaryBlue100;
+  color: $GrayscaleWhite;
+  height: 480px;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    p {
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 120%;
-        padding-bottom: 30px;
-    }
+  &__logo {
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+  }
 
-    &__logo {
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 170%;
-        margin-top: 110px;
-    }
+  &__text {
+    width: 580px;
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-bottom: 30px;
+  }
+
+  &__form {
+    position: relative;
+    width: 500px;
+    margin-top: 80px;
+  }
+
+  &__input {
+    color: $GrayscaleWhite;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    border: 1px solid $GrayscaleWhite;
+    width: 340px;
+    height: 50px;
+    background: $PrimaryBlue100;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: inline-flex;
+    padding: 14px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    color: $GrayscaleBlack;
+    background: $GrayscaleWhite;
+    margin: 0px 240px 105px 0;
+  }
+
+  &__tel {
+    color: $GrayscaleWhite;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-right: 220px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+    color: $GrayscaleWhite;
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  footer {
+    height: 725px;
+  }
+
+  .footer {
+    margin-left: 20px;
 
     &__text {
-        width: 580px;
-        margin-top: 80px;
+      margin-top: 120px;
     }
 
     &__form {
-        position: relative;
-        width: 500px;
-        margin-top: 80px;
-    }
-
-    &__input {
-        color: $GrayscaleWhite;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 160%;
-        border: 1px solid $GrayscaleWhite;
-        width: 340px;
-        height: 50px;
-        background: $PrimaryBlue100;
-        display: inline-block;
-        padding: 5px 20px;
-        margin-bottom: 20px;
-    }
-
-    &__button {
-        display: inline-flex;
-        padding: 14px 32px;
-        align-items: flex-start;
-        gap: 10px;
-        color: $GrayscaleBlack;
-        background: $GrayscaleWhite;
-        margin: 0px 240px 105px 0;
+      margin-top: 20px;
     }
 
     &__tel {
-        color: $GrayscaleWhite;
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 150%;
+      padding-right: 30px;
     }
 
-    ::placeholder {
-        font-size: 16px;
-        color: $GrayscaleWhite;
+    &__button {
+      border: none;
+      margin-bottom: 80px;
     }
+  }
 }

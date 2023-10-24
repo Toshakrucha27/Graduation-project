@@ -1,50 +1,73 @@
-@import '../variables';
+@import "../variables";
 
 .pdf {
-    margin-top: 100px;
+  margin-top: 100px;
 
-    &__suptitle {
-        position: relative;
+  &__suptitle {
+    position: relative;
 
-        &::after {
-            position: absolute;
-            content: '';
-            width: 530px;
-            height: 2px;
-            background: $GrayscaleBlack;
-            top: 10px;
-            left: 110px;
-        }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 530px;
+      height: 2px;
+      background: $GrayscaleBlack;
+      top: 10px;
+      left: 110px;
     }
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 600px;
+  }
+
+  &__description {
+    &__text1 {
+      margin-right: 566px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    bottom: 180px;
+    left: 650px;
+  }
+
+  &__link {
+    &_button {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+      color: #fff;
+      padding: 14px 32px;
+      background: $PrimaryBlue100;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .pdf {
+    margin-top: 60px;
+    margin-bottom: 140px;
 
     &__title {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-right: 600px;
+      margin-top: 20px;
+      margin-bottom: 45px;
+      padding-right: 180px;
     }
 
     &__description {
-        &__text1 {
-            margin-right: 566px;
-            margin-bottom: 60px;
-        }
+      &__text1 {
+        margin: 0 0 50px 20px;
+      }
     }
 
     &__image {
-        display: block;
-        position: relative;
-        bottom: 180px;
-        left: 650px;
+      left: 560px;
     }
-
-    &__link {
-        &_button {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 150%;
-            color: #fff;
-            padding: 14px 32px;
-            background: $PrimaryBlue100;
-        }
-    }
+  }
 }

@@ -1,35 +1,37 @@
-@import '../variables';
+@import "../variables";
 
-.hero {
-    &__description {
-        &__text1 {
-            padding-top: 100px;
-            padding-right: 560px;
-        }
+.map {  
+  margin-bottom: 100px;
+
+  &__suptitle {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 530px;
+      height: 2px;
+      background: $GrayscaleBlack;
+      bottom: 9px;
+      left: 155px;
     }
+  }
+
+  &__location {
+    margin-top: 25px;
+    width: 98vw;
+    height: 800px;
+    border: none;
+  }
 }
 
-.map {
-    margin-bottom: 100px;
-
-    &__suptitle {
-        position: relative;
-
-        &::after {
-            position: absolute;
-            content: '';
-            width: 530px;
-            height: 2px;
-            background: $GrayscaleBlack;
-            bottom: 9px;
-            left: 155px;
-        }
-    }
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .map {
+    margin-top: 70px;
+    margin-bottom: 120px;
 
     &__location {
-        margin-top: 25px;
-        width: 98vw;
-        height: 800px;
-        border: none;
+      height: 570px;
     }
+  }
 }

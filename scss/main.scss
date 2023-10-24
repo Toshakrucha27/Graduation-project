@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 * {
   margin: 0;
@@ -60,10 +60,14 @@ h4 {
   }
 }
 
-
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .container {
-    width: 90vw;
+    width: 88vw;
+  }
+  .main {
+    &__image {
+      margin-bottom: 60px;
+    }
   }
 }
 

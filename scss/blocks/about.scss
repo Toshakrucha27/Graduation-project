@@ -1,77 +1,102 @@
-@import '../variables';
+@import "../variables";
 
 .about {
-    &__suptitle {
-        position: relative;
+  &__suptitle {
+    position: relative;
 
-        &::after {
-            position: absolute;
-            content: '';
-            width: 530px;
-            height: 2px;
-            background: $GrayscaleBlack;
-            bottom: 10px;
-            left: 110px;
-        }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 530px;
+      height: 2px;
+      background: $GrayscaleBlack;
+      bottom: 10px;
+      left: 110px;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-right: 540px;
+  }
+
+  &__description {
+    &__text1 {
+      margin-bottom: 100px;
+      padding-right: 560px;
     }
 
+    &__text2 {
+      margin-top: 85px;
+      padding-left: 493px;
+      padding-right: 73px;
+    }
+  }
+
+  &__variants {
+    background: $PrimaryBlue100;
+    height: 460px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 25px;
+    padding: 55px 68px;
+  }
+
+  &__item {
+    display: flex;
+    width: 500px;
+    height: 100px;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__item-description {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-right: 50px;
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #fff;
+    padding: 14px 32px;
+    margin: 20px 532px 100px 493px;
+    background: $PrimaryBlue100;
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .about {
     &__title {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        padding-right: 540px;
+      padding-right: 0px;
     }
 
     &__description {
+      &__text1 {
+        padding-right: 90px;
+        margin-bottom: 80px;
+      }
 
-        &__text1 {
-            margin-bottom: 100px;
-            padding-right: 560px;
-        }
-
-        &__text2 {
-            margin-top: 85px;
-            padding-left: 493px;
-            padding-right: 73px;
-        }
+      &__text2 {
+        margin-top: 80px;
+        padding-left: 0px;
+        padding-right: 110px;
+      }
     }
 
     &__variants {
-        background: $PrimaryBlue100;
-        height: 460px;
-        border: none;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 60px;
-        row-gap: 25px;
-        padding: 55px 68px;
-    }
-
-    &__item {
-        display: flex;
-        width: 500px;
-        height: 100px;
-        align-items: center;
-        column-gap: 30px;
-    }
-
-
-    &__item-description {
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 120%;
-        padding-right: 50px;
-
+      height: 740px;
     }
 
     &__button {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 150%;
-        color: #fff;
-        padding: 14px 32px;
-        margin: 20px 532px 100px 493px;
-        background: $PrimaryBlue100;
+      margin: 20px 540px 80px 0px;
     }
-
+  }
 }
