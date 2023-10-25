@@ -15,11 +15,14 @@
 }
 
 .nav {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 600px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__item {
     &_bold {
