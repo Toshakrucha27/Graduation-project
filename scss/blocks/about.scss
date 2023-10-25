@@ -67,7 +67,8 @@
     line-height: 150%;
     color: #fff;
     padding: 14px 32px;
-    margin: 20px 532px 100px 493px;
+    width: 175px;
+    margin: 20px 0px 100px 493px;
     background: $PrimaryBlue100;
   }
 }
@@ -96,7 +97,60 @@
     }
 
     &__button {
-      margin: 20px 540px 80px 0px;
+      margin: 20px 0px 80px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    &__suptitle {
+      &::after {
+        width: 260px;
+        bottom: 7px;
+        left: 84px;
+      }
+    }
+
+    &__title {
+      margin: 10px 0 30px 1px;
+      padding-right: 0px;
+    }
+
+    &__variants {
+      height: 590px;
+      column-gap: 30px;
+      row-gap: 30px;
+      padding: 51px 26px;
+    }
+
+    &__item {
+      height: 70px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &__item-description {
+      font-size: 16px;
+      padding-right: 0px;
+    }
+
+    &__description {
+      &__text1 {
+        padding: 0 40px 45px 5px;
+        margin-bottom: 0px;
+      }
+
+      &__text2 {
+        padding: 60px 40px 35px 5px;
+        margin-top: 0px;
+      }
+    }
+
+    &__button {
+      margin: 0px 165px 80px 5px;
     }
   }
 }

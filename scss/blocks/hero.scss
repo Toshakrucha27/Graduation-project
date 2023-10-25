@@ -1,6 +1,6 @@
 @import "../variables";
 
-.hero {  
+.hero {
   position: relative;
   padding-top: 100px;
 
@@ -75,7 +75,7 @@
 
   &__description {
     &__text1 {
-      padding: 0px 560px 100px 0;      
+      padding: 0px 560px 100px 0;
     }
   }
 }
@@ -85,8 +85,8 @@
 }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-  .hero {  
-    padding-top: 60px;  
+  .hero {
+    padding-top: 60px;
 
     &__image {
       height: 400px;
@@ -144,7 +144,7 @@
 
     &__description {
       &__text1 {
-        padding: 0 100px 0 0;        
+        padding: 0 100px 0 0;
       }
     }
   }
@@ -156,6 +156,7 @@
 
     &__image {
       height: 200px;
+      margin-bottom: 5px;
     }
 
     &__title {
@@ -198,6 +199,12 @@
         strong {
           font-size: 20px;
         }
+      }
+    }
+
+    &__description {
+      &__text1 {
+        padding: 40px 43px 0px 2px;
       }
     }
   }

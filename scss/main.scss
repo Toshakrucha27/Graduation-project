@@ -76,4 +76,27 @@ h4 {
     width: auto;
     margin: 0 15px;
   }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .main {
+    &__image {
+      margin-bottom: 50px;
+
+      img {
+        width: 100vw;
+        height: 250px;
+      }
+    }
+  }
 }

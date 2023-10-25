@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-  .layouts {    
+  .layouts {
     margin-top: 30px;
     margin-bottom: 70px;
 
@@ -90,6 +90,60 @@
     &__item-description {
       margin-top: 58px;
       padding-right: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .layouts {
+    margin-bottom: 60px;
+
+    &__suptitle {
+      &::after {
+        width: 247px;
+        bottom: 7px;
+        left: 100px;
+      }
+    }
+
+    &__block {
+      row-gap: 30px;
+
+      &__item {
+        width: 346px;
+
+        img {
+          width: 300px;
+          height: 269.143px;
+        }
+      }
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+
+    &__item-description {
+      padding-right: 15px;
+      padding-left: 17px;
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 9px;
+      }
+    }
+
+    &__call {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+      width: 334px;
+      justify-content: center;
+      margin-top: 13px;
+
+      &_margin {
+        margin-top: 13px;
+      }
     }
   }
 }

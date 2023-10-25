@@ -1,6 +1,6 @@
 @import "../variables";
 
-.map {  
+.map {
   margin-bottom: 100px;
 
   &__suptitle {
@@ -32,6 +32,25 @@
 
     &__location {
       height: 570px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map {
+    margin-bottom: 80px;
+
+    &__suptitle {
+      &::after {
+        width: 222px;
+        bottom: 7px;
+        left: 123px;
+      }
+    }
+
+    &__location {
+      width: 100vw;
+      height: 500px;
     }
   }
 }

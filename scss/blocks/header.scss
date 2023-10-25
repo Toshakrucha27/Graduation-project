@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 .header {
   display: flex;
@@ -24,7 +24,7 @@
   &__item {
     &_bold {
       font-weight: 600;
-      line-height: 140%
+      line-height: 140%;
     }
 
     &_button {
@@ -38,7 +38,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .header {
@@ -88,5 +87,4 @@
       }
     }
   }
-
 }

@@ -67,7 +67,43 @@
     }
 
     &__image {
+      width: 113px;
+      height: 113px;
       left: 560px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pdf {
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    &__suptitle {
+      &::after {
+        width: 265px;
+        top: 6px;
+        left: 82px;
+      }
+    }
+
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-right: 30px;
+    }
+
+    &__description {
+      &__text1 {
+        margin: 0 0 175px 23px;
+      }
+    }
+
+    &__image {
+      width: 113px;
+      height: 113px;
+      bottom: 180px;
+      left: 0px;
     }
   }
 }

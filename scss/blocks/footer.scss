@@ -21,11 +21,11 @@ footer {
 
   &__text {
     width: 580px;
-    margin-top: 80px;
     font-size: 32px;
     font-weight: 600;
     line-height: 120%;
     padding-bottom: 30px;
+    margin-top: 80px;
   }
 
   &__form {
@@ -95,6 +95,44 @@ footer {
     &__button {
       border: none;
       margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 700px;
+  }
+
+  .footer {
+    &__text {
+      font-size: 20px;
+      padding-bottom: 0px;
+      margin-top: 108px;
+      margin-bottom: 60px;
+    }
+
+    &__logo {
+      position: relative;
+      font-size: 24px;
+      top: 90px;
+    }
+
+    &__form {
+      width: 335px;
+      margin-top: 0px;
+    }
+
+    &__button {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+      margin: 0 0 85px 0;
+    }
+
+    &__tel {
+      font-size: 24px;
+      padding-right: 0px;
     }
   }
 }
